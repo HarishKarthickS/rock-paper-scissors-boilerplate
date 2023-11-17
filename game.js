@@ -1,15 +1,17 @@
 let rockPlayer=document.getElementById("rock-p")
 let paperPlayer=document.getElementById("paper-p")
 let sicissorsPlayer=document.getElementById("scissors-p")
-
+let youwon=document.getElementById("youwon")
+let compwon=document.getElementById("compwon")
+let button=document.getElementById("button")
 let rockComp=document.getElementById("rock-c")
 let paperComp=document.getElementById("paper-c")
 let sicissorsComp=document.getElementById("scissors-c")
-
+let playagain=document.getElementById("playagain")
 let rockButton=document.getElementById("rockButton")
 let paperButton=document.getElementById("paperButton")
 let sicissorsButton=document.getElementById("scissorsButton")
-
+let rps=document.getElementById("rps")
 let playerScore=document.getElementById("playerScore")
 let compScore=document.getElementById("compScore")
 
@@ -54,6 +56,18 @@ rockButton.onclick=()=>{
     }
     playerScore.innerHTML=scorePlayer
     compScore.innerHTML=scoreComp
+    if(scorePlayer==5){
+        youwon.style.display="flex";
+        compwon.style.display="none";
+        button.style.display="none";
+        rps.style.marginBottom="25%";
+    }
+    else if(scoreComp==5){
+        youwon.style.display="none";
+        compwon.style.display="flex";
+        button.style.display="none";
+        rps.style.marginBottom="25%";
+    }
 }
 sicissorsButton.onclick=()=>{
     compPlays()
@@ -68,6 +82,18 @@ sicissorsButton.onclick=()=>{
     }
     playerScore.innerHTML=scorePlayer
     compScore.innerHTML=scoreComp
+    if(scorePlayer==5){
+        youwon.style.display="flex";
+        compwon.style.display="none";
+        button.style.display="none";
+        rps.style.marginBottom="25%";
+    }
+    else if(scoreComp==5){
+        youwon.style.display="none";
+        compwon.style.display="flex";
+        button.style.display="none";
+        rps.style.marginBottom="25%";
+    }
 }
 paperButton.onclick=()=>{
     compPlays()
@@ -82,4 +108,19 @@ paperButton.onclick=()=>{
     }
     playerScore.innerHTML=scorePlayer
     compScore.innerHTML=scoreComp
+    if(scorePlayer==5){
+        youwon.style.display="flex";
+        compwon.style.display="none";
+        button.style.display="none";
+        rps.style.marginBottom="25%";
+    }
+    else if(scoreComp==5){
+        youwon.style.display="none";
+        compwon.style.display="flex";
+        button.style.display="none";
+        rps.style.marginBottom="25%";
+    }
+}
+playagain.onclick=()=>{
+    location.href="game.html";
 }

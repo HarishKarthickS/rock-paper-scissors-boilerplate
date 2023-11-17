@@ -52,3 +52,34 @@ body{
 #comp{
     margin-bottom: 100px;
 }
+#wonpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#youwon{
+    margin-top: 4%;
+    display: none;;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 31px;
+}
+#compwon{
+    margin-top: 4%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 31px;
+}
+#playagain{
+    margin-top: 1%;
+    background-color: #F7BB3D;
+    border: 1px solid;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+}
